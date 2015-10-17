@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
   end
   
   def create
-<<<<<<< HEAD
+
   @contact = Contact.new(contact_params)
   if @contact.save
     name = params[:contact][:name]
@@ -23,7 +23,7 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:name, :email, :comments)
     end
-=======
+
     @contact = Contact.new(contact_params)
     
     if @contact.save
@@ -39,7 +39,5 @@ class ContactsController < ApplicationController
       flash[:danger] = 'Error occured, message has not been sent.'
       redirect_to new_contact_path
     end
-  end
->>>>>>> user_authentication
 end
 
