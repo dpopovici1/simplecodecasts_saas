@@ -42,13 +42,11 @@ ActiveRecord::Schema.define(version: 20151023125248) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
-=======
+
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
->>>>>>> user_profiles
   end
 
   create_table "users", force: true do |t|
